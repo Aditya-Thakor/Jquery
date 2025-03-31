@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlideUp-Down</title>
+  </head>
+  <style>
+    .box {
+      background: #ffafaf;
+      height: 200px;
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      overflow: hidden ;
+    }
+  </style>
+  <body>
+    <button id="sup">Slide Up</button>
+    <button id="sdown">Slide Down</button>
+    <button id="stgl">SlideToggle</button>
+    <button id="stop">Stop</button>
+
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        vero officiis id aperiam repellendus excepturi illum eaque, architecto
+        distinctio illo, ullam voluptates quis molestias voluptate voluptatem
+        aliquid placeat omnis. Eos aspernatur aliquam architecto quasi
+        reiciendis consectetur dolore quidem adipisci laborum ipsa velit,
+        voluptates delectus, qui et error cupiditate unde minus. Temporibus quae
+        sapiente reprehenderit provident at architecto tenetur excepturi earum
+        vitae cumque exercitationem ratione quas aut placeat, vero quibusdam
+        eveniet nisi facilis nostrum, iste dignissimos non? Accusamus neque
+        debitis, voluptatibus rem omnis ut, dicta autem dolores, minus impedit
+        sit! Dolorem distinctio voluptatibus, impedit reprehenderit architecto
+        soluta? Laudantium libero veritatis itaque? Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Recusandae rem minus reiciendis quas?
+        Recusandae, est! Nostrum quae saepe necessitatibus a reiciendis.
+        Assumenda explicabo corrupti soluta quos ducimus illum, porro maiores.
+        Quae nemo eveniet iste, dolore nostrum vel sed iure dicta illo culpa est
+        autem nihil numquam quaerat non fugiat nam sint? Unde, voluptatum
+        laudantium. Sed voluptates dolor aspernatur aliquam repellendus commodi
+        dolores natus labore illo at, magnam eaque! Nihil dolore, consequatur
+        sed officiis quod rerum harum modi numquam dolores labore repudiandae
+        maxime delectus veniam. Fugit eligendi, quis porro natus blanditiis
+        maxime adipisci saepe? Magni unde, doloremque a rem tenetur molestiae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt libero,
+        quis possimus ipsam quaerat nesciunt officiis ullam ratione dolorem
+        quidem, beatae aperiam. Nam consectetur vero quo accusamus minus ipsa
+        perferendis! Optio quod, accusamus blanditiis maiores quisquam dolores.
+        Quam quo labore iure? Expedita cumque modi at optio molestias saepe
+        adipisci rem repudiandae assumenda.
+      </p>
+    </div>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#sup").click(function () {
+          $(".box").slideUp();
+        });
+
+        $("#sdown").click(function(){
+            $(".box").slideDown()
+        });
+
+
+        $("#stgl").click(function(){
+            $(".box").slideToggle(3000)
+        })
+
+        $("#stop").click(function(){
+            $(".box").stop()
+        })
+
+      });
+    </script>
+  </body>
+</html>

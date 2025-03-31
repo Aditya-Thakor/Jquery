@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="tgl">Toggle</button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam harum aut,
+      dolores fuga nostrum vel quidem animi neque doloribus nisi debitis. Ex et
+      itaque possimus. Tenetur, voluptas! Magnam nostrum, eveniet delectus sunt
+      quod aperiam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Cum minus quas a accusantium, numquam qui? Nam aliquam molestias, voluptas
+      neque error mollitia possimus, tempore unde laudantium accusamus quis, ab
+      eius officiis sapiente molestiae! Facilis consequatur quod obcaecati
+      beatae perferendis quasi deserunt quidem eligendi repellendus vitae?Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Id tempora voluptatibus
+      error molestiae ratione, porro voluptatem. Fugit quod asperiores rerum
+      inventore numquam dignissimos voluptas ut, voluptate saepe architecto
+      voluptatem consequuntur dicta deleniti neque laudantium perspiciatis at
+      quo modi necessitatibus. Aliquid, obcaecati. Consequatur, officia
+      deserunt? A. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Voluptas, laborum facere, at magni iusto provident nesciunt, blanditiis
+      earum tempore quia impedit molestiae aliquam. Amet dolor rem voluptas iste
+      totam eveniet exercitationem dignissimos repellendus unde ducimus deserunt
+      beatae minima, quisquam, voluptatibus cupiditate, dolore velit. Aspernatur
+      hic omnis, non dolor inventore mollitia illo! Aut eum repellendus iste
+      natus, tempora nam non rem quibusdam eius minus deleniti, repellat odio
+      cum aliquam voluptate. Magnam, blanditiis ea dolor labore eaque porro ipsa
+      et voluptatum voluptatem, in, enim suscipit dolorem dignissimos molestiae
+      tempore aut asperiores rem!
+    </p>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          // $('p').hide();
+          // $('p').hide("slow");
+          $("p").hide(1000);
+        });
+
+        $("#show").click(function () {
+          // $('p').show()
+          $("p").show("slow");
+        });
+
+        $("#tgl").click(function () {
+          // $('p').toggle();
+          $("p").toggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

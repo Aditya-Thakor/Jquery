@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Get & Set Data</title>
+</head>
+<body>
+
+
+    <!-- <button id="gettxt">Get Text</button>
+    <button id="gethtml">Get HTML</button>
+    <button id="getval">Get Value</button>
+    <button id="getlink">Get Link</button> -->
+
+
+    <button id="settxt">Set Text</button>
+    <button id="sethtml">Set HTML</button>
+    <button id="setval">Set Value</button>
+    <button id="setlink">Set Link</button>
+
+
+    <h1>Hello <b>Friends</b> ! Good <u>Morning</u> </h1>
+    <input type="text" value="Adam">
+    <a href="www.flipkart.com">Google</a>
+    
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#gettxt").click(function(){
+                alert("Text : " + $("h1").text())
+            })
+
+            $("#gethtml").click(function(){
+                alert("HTML : " + $("h1").html())
+            })
+
+            $("#getval").click(function(){
+                alert("Value : " + $("input").val())
+            })
+
+            $("#getlink").click(function(){
+                alert("Link : " + $("a").attr("href"))
+            })
+
+
+            $("#settxt").click(function(){
+                $("h1").text("India is my country");
+            })
+
+            $("#sethtml").click(function(){
+                $("h1").html("<u>India is my country</u>");
+            })
+
+            $("#setval").click(function(){
+                $("input").val("Smith John");
+            })
+
+            $("#setlink").click(function(){
+                $("a").attr("href","https://www.google.co.in/");
+            })
+        })
+    </script>
+</body>
+</html>

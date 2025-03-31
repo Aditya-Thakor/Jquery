@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove - Empty</title>
+    <style>
+        .box{
+            background: #ffc5c5;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <button id="remove">Remove</button>
+    <button id="empty">Empty</button>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat veritatis dicta quod veniam aut quisquam, iste possimus temporibus beatae quas! At vero ducimus, mollitia vel illo similique sunt fuga. Molestiae cumque nulla eligendi sapiente. Fugit nihil commodi repellat a molestiae, consequatur minus officiis quod magni voluptates porro dolor sit voluptate quaerat dicta vel, quis incidunt itaque perferendis reiciendis, necessitatibus exercitationem? Porro quaerat praesentium earum incidunt laborum non, accusamus culpa modi, molestiae nemo placeat voluptatum. Esse excepturi provident at tempore cum. Cupiditate soluta aliquam doloremque amet repellendus incidunt, ratione modi nam, quasi esse repudiandae voluptatibus assumenda similique optio nisi deserunt!</p>
+    </div>
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#remove").click(function(){
+                $(".box").remove();
+            });
+
+            $("#empty").click(function(){
+                $(".box").empty();
+            })
+        })
+    </script>
+</body>
+</html>

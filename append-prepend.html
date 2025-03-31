@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Append & Prepend</title>
+</head>
+<body>
+    
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="after">After</button>
+    <button id="before">Before</button>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+
+
+    <p><b>Hello</b></p>
+
+    <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="100" alt="">
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#append").click(function(){
+                $("ul").append("<li>List Item 6</li>");
+                $("b").append(" India")
+            })
+
+            $("#prepend").click(function(){
+                $("ul").prepend("<li>List Item</li>");
+                $("b").prepend(" India")
+            })
+
+            $("#after").click(function(){
+                $("img").after("Google");            
+            })
+
+            $("#before").click(function(){
+                $("img").before("Google");            
+            })
+        })
+    </script>
+</body>
+</html>

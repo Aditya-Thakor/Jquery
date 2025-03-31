@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Remove Class</title>
+    <style>
+        .red{
+            color: red;
+        }
+
+        .box {
+            background: #baffbe;
+            border: 2px solid #0051ff;
+            text-align: center;
+            padding: 20px;margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="addcls">Add Class</button>
+    <button id="rmvcls">Remove Class</button>
+    <button id="tglcls">Toggle Class</button>
+
+    <h1>This is demo of Add class</h1>
+
+    <div id="txt" class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis esse quis perferendis totam maxime quisquam necessitatibus, labore temporibus earum explicabo ex, atque optio laboriosam repellendus tempore? Asperiores quam atque ipsam, molestias delectus libero dolores iure ullam doloremque eaque mollitia! Dolores, cumque accusantium odio non veritatis error minima praesentium ad doloremque eligendi ex doloribus unde nam provident? Deleniti, dolore modi rem hic corporis maiores in eos cum nemo et quia corrupti laboriosam pariatur assumenda necessitatibus ducimus totam deserunt, nam quisquam facere labore alias iusto. Praesentium exercitationem assumenda, totam soluta natus at suscipit modi laudantium similique explicabo nesciunt sapiente voluptates quam.
+    </div>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#addcls").click(function(){
+                $("h1").addClass("red")
+            });
+
+
+            $("#rmvcls").click(function(){
+                $("#txt").removeClass("box");
+            });
+
+            $("#tglcls").click(function(){
+                $("#txt").toggleClass("box");
+            });
+        })
+    </script>
+</body>
+</html>

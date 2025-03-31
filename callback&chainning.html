@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Callback & Chaining</title>
+</head>
+<body>
+
+    <button id="callback">Callback</button>
+    <button id="chain">Chaining</button>
+
+    <h1>India is my country</h1>
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#callback").click(function(){
+                //alert("Are you sure you want Hide Text ?");
+                $("h1").hide(function(){
+                    alert("Hide Text ?");
+                });
+            })
+
+
+            $("#chain").click(function(){
+                $("h1").css("color","red").slideUp(2000).slideDown(2000)
+            })
+        })
+    </script>
+</body>
+</html>

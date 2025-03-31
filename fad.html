@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadIN, FadOut, FadToggle</title>
+</head>
+<body>
+    <button id="fin">FadIn</button>
+    <button id="fout">FadOut</button>
+    <button id="ftgl">FadToggle</button>
+    <button id="fto">FadTo</button>
+    <div class="img">
+        <img src="./img/img10.jpeg" alt="" style="height: 200px; width: 200px; display: none; margin: 20px 20px; " >
+    </div>
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fin").click(function(){
+                $("img").fadeIn()
+            })
+            $("#fout").click(function(){
+                $("img").fadeOut()
+            })
+            $("#ftgl").click(function(){
+                $("img").fadeToggle()
+            })
+            $("#fto").click(function(){
+                $("img").fadeTo(1000, 0.5)
+            })
+        })
+    </script>
+</body>
+</html>
