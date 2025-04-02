@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="./skeletonLoding.css">
     <title>SideBar</title>
     <style>
       body {
@@ -23,16 +24,24 @@
         display: flex;
         flex-direction: column;
       }
+      .profile {
+        height: 200px;
+        -border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .profile h2 {
+        margin-top: 10px;
+      }
 
       .pfp {
         font-size: 90px;
-        position: relative;
-        left: 96px;
-        top: 60px;
       }
 
       .box {
-        -background: white;
+        background: white;
         height: 20px;
       }
 
@@ -71,7 +80,7 @@
   <body>
     <div class="container">
       <div id="sidebar">
-        <div class="profile" style="height: 20px">
+        <div class="profile">
           <i class="fa-solid fa-circle-user pfp"></i>
           <h2>Admin</h2>
         </div>
@@ -92,6 +101,38 @@
           ></i>
           <h1>Admin Panel</h1>
         </div>
+
+        <div class="cards">
+          <div class="card is-loading">
+              <div class="image"></div>
+              <div class="content">
+                  <h2></h2>
+                  <p></p>
+              </div>
+          </div>   
+          <div class="card is-loading">
+              <div class="image"></div>
+              <div class="content">
+                  <h2></h2>
+                  <p></p>
+              </div>
+          </div>   
+          <div class="card is-loading">
+              <div class="image"></div>
+              <div class="content">
+                  <h2></h2>
+                  <p></p>
+              </div>
+          </div>   
+          <div class="card is-loading">
+              <div class="image"></div>
+              <div class="content">
+                  <h2></h2>
+                  <p></p>
+              </div>
+          </div>   
+      </div>
+
       </div>
     </div>
 
