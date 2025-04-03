@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get & Set</title>
+</head>
+<body>
+    <div>
+
+        <button id="gettxt">Get Text</button>
+        <button id="gethtml">Get HTML</button>
+        <button id="getval">Get Value</button>
+        <button id="getlink">Get Link</button>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <button id="settxt">Set Text</button>
+        <button id="sethtml">Set HTML</button>
+        <button id="setval">Set Value</button>
+        <button id="setlink">Set Link</button>
+
+    </div>
+
+
+    <h1>Hello <b>Friends</b> ! Good <u>Morning</u> </h1>
+    <input type="text" value="Adam">
+    <a href="www.flipkart.com">Google</a>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#gettxt").click(function(){
+                alert("Text : " + $("h1").text());
+            });
+
+
+            $("#gethtml").click(function(){
+                alert("HTML : " + $("h1").html());
+            });
+
+            $("#getval").click(function(){
+                alert("value : " + $("input").val());
+            });
+
+            $("#getlink").click(function(){
+                alert("Link : " + $("a").attr("href"));
+            });
+
+
+
+            $("#settxt").click(function(){
+                $("h1").text("The Text is Now Changed!!");
+            });
+
+            $("#sethtml").click(function(){
+                $("h1").html("<i>The Text is Now Changed!!</i> "); 
+            });
+
+            $("#setval").click(function(){
+                $("input").val("Smith");
+            });
+
+            $("#setlink").click(function(){
+                $("a").attr("href","https://www.google.com");
+            });
+
+
+        })
+    </script>
+</body>
+</html>
