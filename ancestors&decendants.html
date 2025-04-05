@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Ancestors & Descendants</title>
+    <style>
+        .box{
+            border: 5px solid red;
+        }
+        .box *{
+            border: 2px solid #ddd;
+            padding: 10px;
+            display: block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="inner-box">
+            div
+            <ul>
+                ul
+                <li>
+                    li
+                    <span>Span Tag</span>
+                </li>
+            </ul>
+
+            <p class="fp">
+                p
+                <span>Span second</span>
+            </p>
+
+            <p class="sp">
+                p
+                <span>Span Third</span>
+            </p>
+
+            <p class="tp">
+                p
+                <span>Span fourth</span>
+            </p>
+
+            <h6>
+                Heading 6
+            </h6>
+
+
+            <div>
+                <b>
+                    Hello
+                </b>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            //$("span").parent().css("border-color","green")
+            //$("span").parents("ul").css("border-color","green")
+            //$("span").parentsUntil("div").css("border-color","green")
+
+            //$("ul").children().css("border-color","green")
+            $(".inner-box").find(".tp").css("border-color","green")
+        })
+    </script>
+</body>
+</html>
